@@ -12,7 +12,7 @@ try {
 
 /* Analisamos el paramtro pagina que entra por metodo get */
 $pagina = isset($_GET['pagina']) ? htmlspecialchars((int)$_GET['pagina']) : 1 ;
-$pagina = $pagina == 0 ? 1 : $pagina;
+$pagina = $pagina <= 0 ? 1 : $pagina;
 $postPorPagina = 5; /* Cantidad de post por pagina */
 
 /* Calculamos la variable incio que se enviara en la consulta */

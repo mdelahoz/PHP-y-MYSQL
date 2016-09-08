@@ -41,7 +41,8 @@
 					<li class="disabled">&raquo;</li>
 				<?php else: ?>
 					<li class=""><a href="?pagina=<?php echo $pagina + 1 ?>">&raquo;</a></li>
-				<?php endif; ?>			</ul>
+				<?php endif; ?>			
+			</ul>
 		</section>
 	</div>
 </body>
